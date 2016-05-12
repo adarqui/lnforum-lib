@@ -1,0 +1,52 @@
+name:                ln-lib
+version:             0.1.0.1
+synopsis:            ln library stuff
+description:         Please see README.md
+homepage:            http://github.com/leuronet/ln-lib#readme
+license:             MIT
+license-file:        LICENSE
+author:              Andrew Darqui
+maintainer:          andrew.darqui@gmail.com
+copyright:           2015 Andrew Darqui
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     LN.Lib
+                       LN.Lib.Codec
+                       LN.Lib.Either
+                       LN.Lib.Text.Search
+                       LN.Lib.Validate
+  build-depends:       base >= 4.7 && < 5
+                     , aeson                         >= 0.6        && < 0.10
+                     , blaze-html                    >= 0.8.1.1
+                     , bytestring                    >= 0.9        && < 0.11
+                     , text                          >= 0.11       && < 2.0
+                     , pureMD5                       >= 2.1.2.1
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings, RecordWildCards
+  ghc-options:         -Wall
+
+-- executable ln-lib-exe
+--  hs-source-dirs:      app
+--  main-is:             Main.hs
+--  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+--  build-depends:       base
+--                     , ln-lib
+--  default-language:    Haskell2010
+
+test-suite ln-lib-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , ln-lib
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/ln-lib
