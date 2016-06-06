@@ -6,5 +6,6 @@ module LN.Lib (
 
 import           LN.Lib.Codec       as A
 import           LN.Lib.Either      as A
-import           LN.Lib.Validate    as A
 import           LN.Lib.Text.Search as A
+import           LN.Lib.Url         as A
+import           LN.Lib.Validate    as A

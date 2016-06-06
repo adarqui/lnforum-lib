@@ -1,5 +1,5 @@
 name:                ln-lib
-version:             0.1.0.1
+version:             0.1.0.2
 synopsis:            ln library stuff
 description:         Please see README.md
 homepage:            http://github.com/leuronet/ln-lib#readme
@@ -19,6 +19,7 @@ library
                        LN.Lib.Codec
                        LN.Lib.Either
                        LN.Lib.Text.Search
+                       LN.Lib.Url
                        LN.Lib.Validate
   build-depends:       base >= 4.7 && < 5
                      , aeson                         >= 0.6        && < 0.10
