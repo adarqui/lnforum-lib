@@ -25,8 +25,9 @@ library
                      , aeson                         >= 0.6        && < 0.10
                      , blaze-html                    >= 0.8.1.1
                      , bytestring                    >= 0.9        && < 0.11
-                     , text                          >= 0.11       && < 2.0
                      , pureMD5                       >= 2.1.2.1
+                     , text                          >= 0.11       && < 2.0
+                     , text-regex-replace            == 0.1.1.1
   default-language:    Haskell2010
   default-extensions:  OverloadedStrings, RecordWildCards
   ghc-options:         -Wall
