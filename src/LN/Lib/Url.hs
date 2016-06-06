@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module LN.Lib.Url (
-  prettyName
+  toPrettyUrl
 ) where
 
 
@@ -14,8 +14,8 @@ import qualified Data.Text as T
 
 -- | This is used to generate Name's based on DisplayName's
 --
--- >> prettyName  "1 2 3 -- hello world?!bingo-BOOM"
+-- >> toPrettyUrl  "1 2 3 -- hello world?!bingo-BOOM"
 -- "1-2-3-hello-world-bingo-boom"
 --
-prettyName :: Text -> Text
-prettyName = T.intercalate "-" . T.words . T.map (\c -> if not $ isAlphaNum c then ' ' else c) . T.toLower
+toPrettyUrl :: Text -> Text
+toPrettyUrl = T.intercalate "-" . T.words . T.map (\c -> if not $ isAlphaNum c then ' ' else c) . T.toLower
