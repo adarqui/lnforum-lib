@@ -6,7 +6,7 @@ module LN.Lib.Url (
 
 
 
-import           Data.Char
+import           Data.Char (isAlphaNum)
 import           Data.Text (Text)
 import qualified Data.Text as T
 
