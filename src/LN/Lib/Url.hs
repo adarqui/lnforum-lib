@@ -22,12 +22,14 @@ import           Data.Text.ICU.Replace (replaceAll)
 -- >> toPrettyUrl "ADARQ's Journal"
 -- "adarqs-journal"
 --
+-- >> toPrettyUrl "ADARQ's Journal's"
+-- "adarqs-journals"
 toPrettyUrl :: Text -> Text
 toPrettyUrl =
   T.intercalate "-" .                                   -- replace spaces with dashes
   T.words .
   T.map (\c -> if not $ isAlphaNum c then ' ' else c) . -- anything other than alpha numeric becomes a space
-  replaceAll "'s " "s " .                               -- cleans up Ownership's in names
+  replaceAll "'s" "s " .                                -- cleans up Ownership's in names
   T.toLower
 
 
