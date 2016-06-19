@@ -21,13 +21,14 @@ library
                        LN.Lib.Text.Search
                        LN.Lib.Url
                        LN.Lib.Validate
-  build-depends:       base >= 4.7 && < 5
-                     , aeson                         >= 0.6        && < 0.10
-                     , blaze-html                    >= 0.8.1.1
-                     , bytestring                    >= 0.9        && < 0.11
-                     , pureMD5                       >= 2.1.2.1
-                     , text                          >= 0.11       && < 2.0
-                     , text-regex-replace            == 0.1.1.1
+  build-depends:       base
+                     , aeson
+                     , blaze-html
+                     , bytestring
+                     , pureMD5
+                     , text
+                     , text-regex-replace
+                     , text-icu
   default-language:    Haskell2010
   default-extensions:  OverloadedStrings, RecordWildCards
   ghc-options:         -Wall
