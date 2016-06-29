@@ -31,7 +31,7 @@ library
                      , text-icu
   default-language:    Haskell2010
   default-extensions:  OverloadedStrings, RecordWildCards
-  ghc-options:         -Wall
+  ghc-options:         -Wall -Werror
 
 -- executable ln-lib-exe
 --  hs-source-dirs:      app
