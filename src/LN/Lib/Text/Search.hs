@@ -56,4 +56,4 @@ doubleSplit :: Text -> Text -> Text -> Maybe (Text, Text)
 doubleSplit c sub s = do
   (a, b)   <- splitOnce sub s
   (a', b') <- splitOnce c sub
-  return $ (T.concat [a, a'], T.concat [b', b])
+  pure $ (T.concat [a, a'], T.concat [b', b])
