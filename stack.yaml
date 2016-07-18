@@ -1,5 +1,5 @@
 flags: {}
 packages:
 - '.'
-extra-deps: [text-regex-replace-0.1.1.1]
+extra-deps: []
 resolver: lts-6.4
