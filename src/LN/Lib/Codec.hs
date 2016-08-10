@@ -17,6 +17,7 @@ module LN.Lib.Codec (
   sbsToTextConcat,
   lbsToTextConcat,
   textToInt64,
+  bscToInt64,
   tread,
   bread,
   md5Text
@@ -139,6 +140,11 @@ lbsToTextConcat = undefined
 
 textToInt64 :: Text -> Int64
 textToInt64 s = read (T.unpack s) :: Int64
+
+
+
+bscToInt64 :: ByteString -> Int64
+bscToInt64 s = read (BSC.unpack s) :: Int64
 
 
 
