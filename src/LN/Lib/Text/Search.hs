@@ -4,8 +4,11 @@ module LN.Lib.Text.Search (
   doubleSplit
 ) where
 
+
+
 import           Data.Text (Text)
 import qualified Data.Text as T
+import           Prelude
 
 
 
