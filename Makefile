@@ -1,7 +1,10 @@
+build:
+	stack build --fast
+
 docs:
 	cabal haddock --hyperlink-source
 
-build:
+build-watch:
 	stack build --file-watch
 
 install:
