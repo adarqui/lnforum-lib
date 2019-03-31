@@ -1,4 +1,4 @@
-# ln-lib
+# lnforum-lib
 
 **LN PROJECT: WORK IN PROGRESS**
 
